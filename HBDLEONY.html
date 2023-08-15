@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>SelamatUlangTahunLeonyPW</title>
+    </head>
+    <body>
+        <h1>SELAMAT ULANG TAHUN LEONY PUSPITA WIJAYA</h1>
+        <img src="ln.jpg">
+        <h2>Semoga panjang umur, sehat selalu, apa yang dicita-citakan tercapai AAMIIN....</h2>
+        <button id="btn_music" onclick="music()">Play/Pause</button>
+        <button id="btn_allert" onclick="alert('Selamat Ulang Tahun')">HBD</button>&nbsp;
+        <audio id="bgmusic" src="https://voca.ro/16zfVLMYlmzS" loop></audio>
+    </body>
+
+    <script>
+        var audioPlaying = false;
+        function music(){
+            var audio = document;getElementById("bgmusic");
+            if (audioPlaying) audio.play()
+            else audio.pause();
+            audioPlaying = !audioPlaying;
+        }
+    </script>
+</html>
